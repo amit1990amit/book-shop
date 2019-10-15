@@ -1,0 +1,93 @@
+body{
+    text-align: center;
+    /* background-image:  */
+}
+h3 {
+    text-align: left;
+
+}
+
+.header{
+    background-color: rgb(218, 91, 87);
+    padding: 10px;
+    margin: 10px;
+}
+
+table {
+
+    border-collapse: collapse;
+    width: 400px;
+    height: 200px;
+}
+
+table, th, td{
+    border: 2px solid black;
+    padding: 20px;
+}
+
+.add-book-btn{
+    color: lightseagreen;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: Transparent;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    margin: 3px;
+    display: block;
+    left: 10px;
+}
+
+
+.modal {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.modal-content {
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    background-color: rgba(255, 255, 255, 0.76);
+    padding: 1rem ;
+    width: 24rem;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+
+.close-button {
+    float: right;
+    width: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    color: black;
+    background-color: white;
+}
+
+.close-button:hover {
+    background-color: darkgray;
+}
+
+.show-modal {
+    opacity: 1;
+    visibility: visible;
+}
+
+.new-book-container{
+ margin: 6px;
+}
+
+.paging {
+    margin: 10px;
+}

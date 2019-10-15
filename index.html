@@ -1,0 +1,44 @@
+<!DOCTYPE html>  
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body onload="init()">
+    <div class="header"> 
+        <h1>Welcome to my book store</h1>
+        <div class="sort-container">
+            <strong>Sorted By:</strong>
+            <select onchange="onSetSort(this.value)">
+                <option>name</option>
+                <option>price</option>
+            </select>
+        </div>
+    </div>
+    <div class="new-book-container">
+        <button class="add-book-btn" onclick="readAndAddNewBook()">add another book</button>
+        <label for="bookName" >New Name</label>
+        <input name="bookName" type="text" class="book-name">
+        <label for="bookPrice" >New Price</label>
+        <input name="bookPrice" type="number" class="book-price">
+    </div>
+
+    <div class="book-chart">
+    </div>
+    <div class="modal">
+        <div class="modal-content">
+        </div>
+    </div>
+    <div class="paging">
+        <button class="next-btn" onclick="onNextPage()">Next Page</button>
+        <button class="prev-btn" onclick="onPrevPage()">prev Page</button>
+    </div>
+
+    <script src="js/utils.js"></script>
+    <script src="js/service.js"></script>
+    <script src="js/controler.js"></script>
+</body>
+</html>
